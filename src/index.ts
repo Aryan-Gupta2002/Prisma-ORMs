@@ -19,7 +19,10 @@ findUser();
 async function findUser() {
   const res = await client.user.findFirst({
     where: {
-      username: "ActonidePrime",
+      id: 1,
+    },
+    include: {
+      todos: true,
     },
   });
   console.log(res);
