@@ -13,12 +13,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Aryan-Gupta2002/Prisma-ORMs/issues"
   },
   "homepage": "https://github.com/Aryan-Gupta2002/Prisma-ORMs#readme",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "@types/dotenv": "^6.1.1",
     "@types/pg": "^8.20.0",
     "pg": "^8.22.0",
     "typescript": "^6.0.3"
