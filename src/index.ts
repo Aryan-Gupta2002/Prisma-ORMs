@@ -14,4 +14,13 @@ async function createUser() {
     },
   });
 }
-createUser();
+findUser();
+
+async function findUser() {
+  const res = await client.user.findFirst({
+    where: {
+      username: "ActonidePrime",
+    },
+  });
+  console.log(res);
+}
